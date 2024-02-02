@@ -46,12 +46,8 @@ class Player {
 	movePlayerSprite() {
 		if (this.onTop) {
 			this.playerSprite.src = './img/man_top.png'
-			this.playerSprite.style.removeProperty('bottom');
-			this.playerSprite.style.top = '0px';
 		} else {
 			this.playerSprite.src = './img/man_down.png'
-			this.playerSprite.style.removeProperty('top');
-			this.playerSprite.style.bottom = '0px';
 		}
 		if (this.onLeft) {
 			this.playerSprite.style.transform = 'scale(1, 1)';
